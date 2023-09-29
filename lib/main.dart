@@ -54,7 +54,7 @@ class _homepageState extends State<homepage>{
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                      Text("Hello!", style: TextStyle(fontSize: 14, fontWeight: FontWeight.w700,),),
-                     Text("James Butler", style: TextStyle(fontSize: 24, fontWeight: FontWeight.w700, height: 1.5)),
+                     Text("James Butler", style: TextStyle(fontSize: 24, fontWeight: FontWeight.w700,)),
                   ],
                 ),
                   Image.asset("assets/images/Image.png"),
@@ -119,7 +119,14 @@ const Padding(
   child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
     children: [
-      Text('house', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w700, color: Colors.white, backgroundColor: Colors.red,),),
+      TextField(
+        decoration: InputDecoration(
+          hintText: 'House',
+          filled: true,
+          fillColor: Colors.white,
+          //enabledBorder: 
+        ),
+      ),
       Text('Apartment', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w700, color: Colors.red,),),
       Text('Office',style: TextStyle(fontSize: 16, fontWeight: FontWeight.w700, color: Colors.green,),),
       Text('Land',style: TextStyle(fontSize: 16, fontWeight: FontWeight.w700, color: Colors.blue,),)
