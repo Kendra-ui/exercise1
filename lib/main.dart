@@ -57,7 +57,7 @@ class _homepageState extends State<homepage>{
   Widget build(BuildContext context) {
 
     return  Scaffold(
-          backgroundColor:  const Color.fromARGB(255, 232, 214, 255),
+          backgroundColor:  Color.fromARGB(255, 223, 202, 252),
           body:screen[_currentIndex],
           
           
@@ -65,35 +65,30 @@ class _homepageState extends State<homepage>{
         bottomNavigationBar: BottomNavigationBar(
           onTap: onTappedBar,
           currentIndex: _currentIndex,
-          items: const [
+          items:  [
             BottomNavigationBarItem(
-              icon: Icon(Icons.home, color: Colors.black,),
+              icon: Icon(Icons.home, color: Color.fromARGB(255, 99, 12, 238),),
               label: ('home'),
-              backgroundColor: Color.fromARGB(255, 233, 159, 227)
               ),
 
               BottomNavigationBarItem(
-              icon: Icon(Icons.bookmark, color: Colors.black,),
+              icon: Icon(Icons.bookmark, color: Color.fromARGB(255, 99, 12, 238)),
               label: ('bookmark'),
-              backgroundColor: Color.fromARGB(255, 64, 249, 255)
               ),
 
               BottomNavigationBarItem(
-              icon: Icon(Icons.restaurant_menu_outlined, color: Colors.black,),
+              icon: Icon(Icons.restaurant_menu_outlined, color:Color.fromARGB(255, 99, 12, 238)),
               label: ('menu'),
-              backgroundColor: Color.fromARGB(255, 64, 255, 198)
               ),
 
               BottomNavigationBarItem(
-              icon: Icon(Icons.chat_sharp, color: Colors.black,),
+              icon: Icon(Icons.chat_sharp, color: Color.fromARGB(255, 99, 12, 238),),
               label: ('chat'),
-              backgroundColor: Color.fromARGB(255, 226, 255, 64)
               ),
 
               BottomNavigationBarItem(
-              icon: Icon(Icons.settings_applications_outlined, color: Colors.black,),
+              icon: Icon(Icons.settings_applications_outlined, color: Color.fromARGB(255, 99, 12, 238),),
               label: ('setting'),
-              backgroundColor: Color.fromARGB(255, 233, 64, 255)
               ),
 
               

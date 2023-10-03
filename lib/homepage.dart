@@ -14,7 +14,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
 
     return Scaffold(
-      backgroundColor:  const Color.fromARGB(255, 232, 214, 255),
+      backgroundColor:  Color.fromARGB(255, 243, 237, 255),
 
        body:  SafeArea(
 
@@ -38,7 +38,7 @@ class _HomePageState extends State<HomePage> {
               ],
             ),
             ),
-            Padding(padding:  const EdgeInsets.only(top: 8),
+            Padding(padding:  const EdgeInsets.fromLTRB(24, 15, 24, 24),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -46,6 +46,9 @@ class _HomePageState extends State<HomePage> {
                   child: TextField(
                     controller: _searchController,
                     decoration: InputDecoration(
+                      prefixIcon: IconButton(icon: Icon(Icons.search, color: Colors.indigoAccent,) ,
+                      onPressed: () =>
+                      _searchController.clear(),),
                       hintText: 'Search...',
                       filled: true,
                       fillColor: Colors.white,
@@ -61,36 +64,62 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
 
-              ElevatedButton(
+              Padding(padding: EdgeInsets.all(12),
+              child: ElevatedButton(
                 onPressed: () {},
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.indigoAccent
+                style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all<Color>(Colors.indigoAccent),
+                  shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                    RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(12.0),
+                    )
+                  )
+                  
                 ),
-                child: const Row(
+                child:  Row(
                 children: [
-                Icon(Icons.filter_list_sharp, size: 24.0,),
-                Text('filters'),
-                SizedBox(
-                  width: 30,
-                  height: 48,
+                Image.asset('assets/images/filter-circle.jpg'),
+                const Text('filters', textAlign: TextAlign.center,),
+                const SizedBox(
+                  width: 20,
+                  height: 57,
                 )
                   ],
                   ),
-                  )
+                  ),
+                  ),
+              
               ],
               ),
               ),
-              const Padding(padding: EdgeInsets.all(24),
+               Padding(padding: EdgeInsets.only(left: 24),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  Text('house', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w700, color: Colors.white, backgroundColor: Colors.red)),
+                  Center(
+                    child:Container(
+                      width: 104,
+                      height: 40,
+                      decoration: BoxDecoration(
+                        color: Colors.red,
+                        border: Border.all(color: Colors.red,),
+                        borderRadius: BorderRadius.circular(12)
+                      ),
+                      child:
+                      const Padding(padding: EdgeInsets.all(10),
+                      child: 
+                        const Text('house', textAlign:TextAlign.center, style: TextStyle(fontSize: 16, fontWeight: FontWeight.w700, color: Colors.white, )
+                        ),
+                      ),
+                    ),
+                  ),
+                  
                   Text('Apartment', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w700, color: Colors.red )),
                   Text('Office', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w700, color: Colors.green, )),
                   Text('Land', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w700, color: Colors.blue, )),
                 ]),
                 ),
-             const Padding(padding: EdgeInsets.all(20),
+             const Padding(padding: EdgeInsets.all(29),
              child: Row(
               children: [
                 Text('All property', style: TextStyle(fontSize: 18, fontWeight: FontWeight.w700)),
@@ -114,7 +143,7 @@ class _HomePageState extends State<HomePage> {
               child: Column(
                 children: [
                   
-                  Padding(padding: const EdgeInsets.all(20),
+                  Padding(padding: const EdgeInsets.all(19),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(30),
                     child: Image.asset('assets/images/house.jpeg'),
@@ -124,24 +153,29 @@ class _HomePageState extends State<HomePage> {
                     children: [
                       
                     Text('Apartment', style: TextStyle(fontWeight: FontWeight.bold),),
-                    Text('267000', style: TextStyle(fontWeight: FontWeight.bold, color: Color.fromARGB(255, 79, 33, 243)),),
+
+                    Padding(padding: EdgeInsets.only(left:15),
+                    child:
+                    Text('\$267000', style: TextStyle(fontWeight: FontWeight.bold, color: Color.fromARGB(255, 79, 33, 243)),),
+)
 
                   ],
                   ),
-                  const Padding(padding: EdgeInsets.all(12.01),
+                   Padding(padding: EdgeInsets.all(12.01),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                     Icon(Icons.square_foot_sharp, color: Color.fromARGB(255, 221, 136, 10),),
+                     Image.asset('assets/images/sqt.jpg', height: 10, width: 9,),
                      Text('2000sqft'),
              
-                     Icon(Icons.single_bed_outlined, color: Color.fromARGB(255, 221, 136, 10),),
+                     Image.asset('assets/images/bed.jpg', height: 12, width: 12,),
                      Text('4'),
              
-                     Icon(Icons.restaurant_menu_outlined, color: Color.fromARGB(255, 221, 136, 10),),
+                     Image.asset('assets/images/restaurant.jpg', height: 12, width: 12,),
                      Text('1'),
                     ],
-                  ),)
+                  ),
+                  ),
                 ],
               ),
              ),
@@ -150,7 +184,7 @@ class _HomePageState extends State<HomePage> {
              ),
              ),
 
-            const Padding(padding: EdgeInsets.only(right:210),
+            const Padding(padding: EdgeInsets.fromLTRB(24, 19, 231, 16),
             child: 
             Text('Featured Property', textAlign: TextAlign.left, style: TextStyle(fontSize: 18,fontWeight: FontWeight.w700),),
             ),
@@ -175,48 +209,54 @@ class _HomePageState extends State<HomePage> {
                 
                 ),
                  ),
-                 const Column(
+
+                 Padding(padding: EdgeInsets.fromLTRB(6,11,32,15),
+                 child:
+                  Column(
 
                   children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    const Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
                   Text('Dup Apartment', style: TextStyle(fontSize: 14, fontWeight: FontWeight.w700)),
-                  Text('26700', style: TextStyle(fontSize: 14, fontWeight: FontWeight.w700, color: Colors.indigoAccent))
+
+                  Padding(padding: EdgeInsets.only(left:18),
+                  child:
+                  Text('\$26700', style: TextStyle(fontSize: 14, fontWeight: FontWeight.w700, color: Colors.indigoAccent))
+                )
 
                       ],
                     ),
-                    Padding(padding: EdgeInsets.only(top:5),
-                      child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     
+                       const Row(                    
                         children: [
                       Icon(Icons.location_on_outlined),
                       Text('2BW Street,NY,New York', style: TextStyle(fontSize: 10, fontWeight: FontWeight.w400, color: Color.fromARGB(255, 114, 114, 114)))
                         ],
                       ),
-                    ),
+                    
 
-                   Padding(padding: EdgeInsets.all(12.01),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                     Icon(Icons.square_foot_sharp, color: Color.fromARGB(255, 221, 136, 10),),
+                     Image.asset('assets/images/sqt.jpg', height: 10, width: 9,),
                      Text('2000sqft'),
              
-                     Icon(Icons.single_bed_outlined, color: Color.fromARGB(255, 221, 136, 10),),
+                     Image.asset('assets/images/bed.jpg', height: 12, width: 12,),
                      Text('4'),
 
-                     Icon(Icons.shower_rounded, color: Color.fromARGB(255, 221, 136, 10),),
+                     Image.asset('assets/images/shower.jpg', height: 12, width: 12,),
                      Text('3'),
              
-                     Icon(Icons.restaurant_menu_outlined, color: Color.fromARGB(255, 221, 136, 10),),
+                     Image.asset('assets/images/restaurant.jpg', height: 12, width: 12,),
                      Text('1'),
                     ],
                   ),
-                  ),
+                
                 ],
         )
+            )
         ],
         ),
         ]),
