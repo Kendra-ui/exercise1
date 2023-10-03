@@ -38,7 +38,7 @@ class _BookmarkState extends State<Bookmark> {
             ),
             ),
             
-        Padding( padding: const EdgeInsets.only(top: 10),
+        Padding( padding: const EdgeInsets.all(12),
               child: Container(
               child: Column(children: [
             Row(
@@ -47,25 +47,104 @@ class _BookmarkState extends State<Bookmark> {
 
                 Image.asset('assets/images/Rectangle 5182.png', height: 90,),
 
-                 Padding(padding: EdgeInsets.only(top:1),
+                 const Padding(padding: EdgeInsets.only(top:1),
                  child:
                   Column(
                   children: [
-                Text('James Butler', style: TextStyle(fontSize: 14, fontWeight: FontWeight.w700),),
-              Text('example@gmai.com', style: TextStyle(fontSize: 10,),),
+                Text('James Butler', style: TextStyle(fontSize: 18, fontWeight: FontWeight.w700),),
+              Text('example@gmai.com', style: TextStyle(fontSize: 12,),),
                   ]
                 )
 
             )],
                     ),
                     
-
-             
-                
                 ],
         )
             )
       ),
+
+      Padding(padding: const EdgeInsets.all(30),
+        child:
+        Row(
+         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [
+        
+        Padding(padding: EdgeInsets.only(left:15),
+        child:
+        Container(
+          width: 95,
+          height: 95,
+              decoration: BoxDecoration(
+              border: Border.all(color: Color.fromARGB(255, 165, 211, 248)),
+              borderRadius: BorderRadius.circular(15), color: Color.fromARGB(255, 165, 211, 248)),
+              child:Padding(padding: EdgeInsets.all(19),
+              child:  Column(children: [
+                  Image.asset('assets/images/message.jpg'),
+                  Padding(padding: EdgeInsets.only(top:9.69),
+                  child: 
+                  Text('message', style: TextStyle(fontSize: 12),),)
+                  
+              ]
+              ),
+              ),
+              
+        ), 
+        ),
+        
+        Padding(padding: EdgeInsets.only(left:15),
+        child: 
+        Row(
+          children: [
+          Container(
+          width: 95,
+          height: 95,
+              decoration: BoxDecoration(
+              border: Border.all(color: Color.fromARGB(255, 248, 202, 165)),
+              borderRadius: BorderRadius.circular(15), color: Color.fromARGB(255, 248, 202, 165)),
+              child:Padding(padding: EdgeInsets.all(19),
+              child:  Column(children: [
+                  Image.asset('assets/images/Vector.jpg'),
+                  const Padding(padding: EdgeInsets.only(top:9.69),
+                  child: 
+                  Text('Schedule', style: TextStyle(fontSize: 12),),)
+                  
+              ]
+              ),
+              ),
+              
+        ),
+        
+        
+        Padding(padding: const EdgeInsets.only(left: 15),
+        child: 
+         Container(
+          width: 95,
+          height: 95,
+              decoration: BoxDecoration(
+              border: Border.all(color: Color.fromARGB(255, 175, 248, 165)),
+              borderRadius: BorderRadius.circular(15), color: Color.fromARGB(255, 175, 248, 165)),
+              child:Padding(padding: EdgeInsets.all(19),
+              child:  Column(children: [
+                  Image.asset('assets/images/Vector (1).jpg'),
+                  const Padding(padding: EdgeInsets.only(top:9.69),
+                  child: 
+                  Text('Call', style: TextStyle(fontSize: 12),),)
+                  
+              ]
+              ),
+              ),
+              
+        )
+        ),
+        ],
+        )
+        )
+       
+        ]) ,
+      
+      )
+      
       ],
       ),
     ),
