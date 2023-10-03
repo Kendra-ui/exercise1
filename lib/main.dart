@@ -1,5 +1,6 @@
 import 'package:exercise1/bookmark.dart';
 import 'package:exercise1/homepage.dart';
+import 'package:exercise1/policy.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -42,6 +43,7 @@ class _homepageState extends State<homepage>{
   final List<Widget> screen = [
     HomePage(),
     Bookmark(),
+    Policy(),
   ];
 
   void onTappedBar(int index)
