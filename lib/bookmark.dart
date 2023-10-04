@@ -12,6 +12,7 @@ class _BookmarkState extends State<Bookmark> {
   @override
   Widget build(BuildContext context) {
     return    Scaffold(
+      backgroundColor: Color.fromARGB(255, 249, 234, 252),
       body: SafeArea(
       child: SingleChildScrollView(
           child: Column(
@@ -237,7 +238,9 @@ class _BookmarkState extends State<Bookmark> {
       
           ),
 
-          Container(
+        Padding(padding: EdgeInsets.all(10),
+        child: 
+        Container(
               width: 400,
               decoration: BoxDecoration(
               border: Border.all(color: Colors.white),
@@ -309,7 +312,10 @@ class _BookmarkState extends State<Bookmark> {
         ]),
       
           ),
-
+        ),
+          
+          Padding(padding: EdgeInsets.all(10),
+          child: 
           Container(
               width: 400,
               decoration: BoxDecoration(
@@ -382,7 +388,10 @@ class _BookmarkState extends State<Bookmark> {
         ]),
       
           ),
+              ),
 
+          Padding(padding: EdgeInsets.all(10),
+          child: 
           Container(
               width: 400,
               decoration: BoxDecoration(
@@ -398,7 +407,7 @@ class _BookmarkState extends State<Bookmark> {
                   borderRadius: BorderRadius.circular(20),
                   child:
                  
-                Image.asset('assets/images/h3.jpeg', height: 90,),
+                Image.asset('assets/images/h2.jpeg', height: 90,),
                 
                 ),
                  ),
@@ -455,6 +464,8 @@ class _BookmarkState extends State<Bookmark> {
         ]),
       
           ),
+          )
+          
                 ],
               ) 
               
