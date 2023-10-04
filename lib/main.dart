@@ -1,4 +1,5 @@
 import 'package:exercise1/bookmark.dart';
+import 'package:exercise1/details.dart';
 import 'package:exercise1/homepage.dart';
 import 'package:exercise1/policy.dart';
 import 'package:flutter/material.dart';
@@ -44,6 +45,7 @@ class _homepageState extends State<homepage>{
     HomePage(),
     Bookmark(),
     Policy(),
+    Details(),
   ];
 
   void onTappedBar(int index)
