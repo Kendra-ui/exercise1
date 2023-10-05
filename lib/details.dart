@@ -127,7 +127,7 @@ class _DetailsState extends State<Details> {
                  const Padding(padding: EdgeInsets.only(right:30),
                  child:
                   Column(
-crossAxisAlignment: CrossAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                      Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -248,7 +248,8 @@ crossAxisAlignment: CrossAxisAlignment.start,
                  const Padding(padding: EdgeInsets.fromLTRB(6,11,32,15),
                  child:
                   Column(
-
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                      Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,

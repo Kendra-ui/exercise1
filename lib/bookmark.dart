@@ -12,7 +12,7 @@ class _BookmarkState extends State<Bookmark> {
   @override
   Widget build(BuildContext context) {
     return    Scaffold(
-      backgroundColor: Color.fromARGB(255, 249, 234, 252),
+      backgroundColor: Color.fromARGB(255, 245, 238, 247),
       body: SafeArea(
       child: SingleChildScrollView(
           child: Column(
@@ -167,6 +167,7 @@ class _BookmarkState extends State<Bookmark> {
             Row(
               mainAxisAlignment:MainAxisAlignment.spaceBetween,
               children: [
+                
             Padding(padding: const EdgeInsets.all(10.0), 
               child:
                ClipRRect(
@@ -205,7 +206,7 @@ class _BookmarkState extends State<Bookmark> {
                     
 
               Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                      Image.asset('assets/images/sqt.jpg', height: 10, width: 9,),
                      Text('2000sqft'),
