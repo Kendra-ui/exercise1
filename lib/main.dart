@@ -2,6 +2,7 @@ import 'package:exercise1/bookmark.dart';
 import 'package:exercise1/details.dart';
 import 'package:exercise1/homepage.dart';
 import 'package:exercise1/policy.dart';
+//import 'package:exercise1/settings.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -46,6 +47,7 @@ class _homepageState extends State<homepage>{
     Bookmark(),
     Policy(),
     Details(),
+    //Settings(),
   ];
 
   void onTappedBar(int index)
@@ -89,12 +91,6 @@ class _homepageState extends State<homepage>{
               icon: Icon(Icons.chat_sharp, color: Color.fromARGB(255, 99, 12, 238),),
               label: ('chat'),
               ),
-
-              BottomNavigationBarItem(
-              icon: Icon(Icons.settings_applications_outlined, color: Color.fromARGB(255, 99, 12, 238),),
-              label: ('setting'),
-              ),
-
               
           ],
           

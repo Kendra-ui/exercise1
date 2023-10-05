@@ -17,7 +17,7 @@ class _BookmarkState extends State<Bookmark> {
       child: SingleChildScrollView(
           child: Column(
             children: [
-             Padding(padding: const EdgeInsets.all(10),
+             Padding(padding: const EdgeInsets.symmetric(vertical:20, horizontal: 20),
             child: 
                Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -50,7 +50,7 @@ class _BookmarkState extends State<Bookmark> {
             ),
             ),
             
-        Padding( padding: const EdgeInsets.only(top:1),
+        Padding( padding: const EdgeInsets.only(left:15),
               child: Container(
               child: Column(children: [
             Row(
@@ -76,14 +76,12 @@ class _BookmarkState extends State<Bookmark> {
             )
       ),
 
-      Padding(padding: const EdgeInsets.all(1),
+      Padding(padding: const EdgeInsets.symmetric(vertical:10, horizontal: 30),
         child:
         Row(
-         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
         
-        Padding(padding: EdgeInsets.only(left:15),
-        child:
         Container(
           width: 95,
           height: 95,
@@ -102,56 +100,48 @@ class _BookmarkState extends State<Bookmark> {
               ),
               
         ), 
-        ),
+      
         
-        Padding(padding: EdgeInsets.only(left:15),
-        child: 
-        Row(
-          children: [
-          Container(
-          width: 95,
-          height: 95,
-              decoration: BoxDecoration(
-              border: Border.all(color: Color.fromARGB(255, 248, 202, 165)),
-              borderRadius: BorderRadius.circular(15), color: Color.fromARGB(255, 248, 202, 165)),
-              child:Padding(padding: EdgeInsets.all(19),
-              child:  Column(children: [
-                  Image.asset('assets/images/Vector.jpg'),
-                  const Padding(padding: EdgeInsets.only(top:9.69),
-                  child: 
-                  Text('Schedule', style: TextStyle(fontSize: 12),),)
-                  
-              ]
-              ),
-              ),
-              
+        Container(
+        width: 95,
+        height: 95,
+            decoration: BoxDecoration(
+            border: Border.all(color: Color.fromARGB(255, 248, 202, 165)),
+            borderRadius: BorderRadius.circular(15), color: Color.fromARGB(255, 248, 202, 165)),
+            child:Padding(padding: EdgeInsets.all(19),
+            child:  Column(children: [
+                Image.asset('assets/images/Vector.jpg'),
+                const Padding(padding: EdgeInsets.only(top:9.69),
+                child: 
+                Text('Schedule', style: TextStyle(fontSize: 12),),)
+                
+            ]
+            ),
+            ),
+            
         ),
         
         
-        Padding(padding: const EdgeInsets.only(left: 15),
-        child: 
          Container(
-          width: 95,
-          height: 95,
-              decoration: BoxDecoration(
-              border: Border.all(color: Color.fromARGB(255, 175, 248, 165)),
-              borderRadius: BorderRadius.circular(15), color: Color.fromARGB(255, 175, 248, 165)),
-              child:Padding(padding: EdgeInsets.all(19),
-              child:  Column(children: [
-                  Image.asset('assets/images/Vector (1).jpg'),
-                  const Padding(padding: EdgeInsets.only(top:9.69),
-                  child: 
-                  Text('Call', style: TextStyle(fontSize: 12),),)
-                  
-              ]
-              ),
-              ),
-              
-        )
-        ),
-        ],
-        )
-        )
+        width: 95,
+        height: 95,
+            decoration: BoxDecoration(
+            border: Border.all(color: Color.fromARGB(255, 175, 248, 165)),
+            borderRadius: BorderRadius.circular(15), color: Color.fromARGB(255, 175, 248, 165)),
+            child:Padding(padding: EdgeInsets.all(19),
+            child:  Column(children: [
+                Image.asset('assets/images/Vector (1).jpg'),
+                const Padding(padding: EdgeInsets.only(top:9.69),
+                child: 
+                Text('Call', style: TextStyle(fontSize: 12),),)
+                
+            ]
+            ),
+            
+            
+             )
+             )
+        
        
         ]) ,
       
