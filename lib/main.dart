@@ -43,10 +43,10 @@ class _homepageState extends State<homepage>{
 
    int _currentIndex = 0;
   final List<Widget> screen = [
-    HomePage(),
-    Bookmark(),
-    Policy(),
-    Details(),
+    const HomePage(),
+    const Bookmark(),
+    const Policy(),
+    const Details(),
     //Settings(),
   ];
 
@@ -63,22 +63,22 @@ class _homepageState extends State<homepage>{
   Widget build(BuildContext context) {
 
     return  Scaffold(
-          backgroundColor:  Color.fromARGB(255, 223, 202, 252),
+          backgroundColor:  const Color.fromARGB(255, 223, 202, 252),
           body:screen[_currentIndex],
           
           
 
-        bottomNavigationBar: BottomNavigationBar(
+         bottomNavigationBar: BottomNavigationBar(
           onTap: onTappedBar,
           currentIndex: _currentIndex,
-          items:  [
-            BottomNavigationBarItem(
+          items:  const [
+             BottomNavigationBarItem(
               icon: Icon(Icons.home, color: Color.fromARGB(255, 99, 12, 238),),
               label: ('home'),
               ),
 
               BottomNavigationBarItem(
-              icon: Icon(Icons.bookmark, color: Color.fromARGB(255, 99, 12, 238)),
+              icon: Icon(Icons.chat_sharp, color: Color.fromARGB(255, 99, 12, 238)),
               label: ('bookmark'),
               ),
 
@@ -88,7 +88,7 @@ class _homepageState extends State<homepage>{
               ),
 
               BottomNavigationBarItem(
-              icon: Icon(Icons.chat_sharp, color: Color.fromARGB(255, 99, 12, 238),),
+              icon: Icon(Icons.bookmark, color: Color.fromARGB(255, 99, 12, 238),),
               label: ('chat'),
               ),
               
@@ -97,9 +97,6 @@ class _homepageState extends State<homepage>{
         )
       );
              
-      
- 
- 
 }  
 }
 

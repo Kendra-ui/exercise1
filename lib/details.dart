@@ -254,7 +254,9 @@ class _DetailsState extends State<Details> {
                      Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
-                  Text('Cement total', style: TextStyle(fontSize: 18, fontWeight: FontWeight.w700)),
+                        FittedBox(
+                          child: Text('Cement total', style: TextStyle(fontSize: 18, fontWeight: FontWeight.w700)),
+                        ),
 
                   Padding(padding: EdgeInsets.only(left:18),
                   child:
