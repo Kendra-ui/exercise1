@@ -14,7 +14,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
 
     return Scaffold(
-      backgroundColor:  Color.fromARGB(255, 243, 237, 255),
+      backgroundColor:  const Color.fromARGB(255, 243, 237, 255),
 
        body:  SafeArea(
 
@@ -46,13 +46,13 @@ class _HomePageState extends State<HomePage> {
                   child: TextField(
                     controller: _searchController,
                     decoration: InputDecoration(
-                      prefixIcon: IconButton(icon: Icon(Icons.search, color: Colors.indigoAccent,) ,
+                      prefixIcon: IconButton(icon: const Icon(Icons.search, color: Colors.indigoAccent,) ,
                       onPressed: () =>
                       _searchController.clear(),),
                       hintText: 'Search...',
                       filled: true,
                       fillColor: Colors.white,
-                      suffixIcon: IconButton(icon: Icon(Icons.clear),
+                      suffixIcon: IconButton(icon: const Icon(Icons.clear),
                       onPressed: () => 
                       _searchController.clear(),
                       ),
@@ -64,7 +64,7 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
 
-              Padding(padding: EdgeInsets.all(12),
+              Padding(padding: const EdgeInsets.all(12),
               child: ElevatedButton(
                 onPressed: () {},
                 style: ButtonStyle(
@@ -92,7 +92,7 @@ class _HomePageState extends State<HomePage> {
               ],
               ),
               ),
-               Padding(padding: EdgeInsets.only(left: 24),
+               Padding(padding: const EdgeInsets.only(left: 24),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
@@ -108,15 +108,15 @@ class _HomePageState extends State<HomePage> {
                       child:
                       const Padding(padding: EdgeInsets.all(10),
                       child: 
-                        const Text('house', textAlign:TextAlign.center, style: TextStyle(fontSize: 16, fontWeight: FontWeight.w700, color: Colors.white, )
+                         Text('house', textAlign:TextAlign.center, style: TextStyle(fontSize: 16, fontWeight: FontWeight.w700, color: Colors.white, )
                         ),
                       ),
                     ),
                   ),
                   
-                  Text('Apartment', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w700, color: Colors.red )),
-                  Text('Office', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w700, color: Colors.green, )),
-                  Text('Land', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w700, color: Colors.blue, )),
+                  const Text('Apartment', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w700, color: Colors.red )),
+                  const Text('Office', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w700, color: Colors.green, )),
+                  const Text('Land', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w700, color: Colors.blue, )),
                 ]),
                 ),
              const Padding(padding: EdgeInsets.all(29),
@@ -134,7 +134,7 @@ class _HomePageState extends State<HomePage> {
              
              SingleChildScrollView(
               scrollDirection: Axis.horizontal,
-              child: Row(children: List.generate(3, (index) => Padding(padding: EdgeInsets.only(right: 10),child: Container(
+              child: Row(children: List.generate(3, (index) => Padding(padding: const EdgeInsets.only(right: 10),child: Container(
               decoration: BoxDecoration(
                 border: Border.all(color: Colors.white),
                 borderRadius: BorderRadius.circular(24),
@@ -161,18 +161,18 @@ class _HomePageState extends State<HomePage> {
 
                   ],
                   ),
-                   Padding(padding: EdgeInsets.all(12.01),
+                   Padding(padding: const EdgeInsets.all(12.01),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                      Image.asset('assets/images/sqt.jpg', height: 10, width: 9,),
-                     Text('2000sqft'),
+                     const Text('2000sqft'),
              
                      Image.asset('assets/images/bed.jpg', height: 12, width: 12,),
-                     Text('4'),
+                     const Text('4'),
              
                      Image.asset('assets/images/restaurant.jpg', height: 12, width: 12,),
-                     Text('1'),
+                     const Text('1'),
                     ],
                   ),
                   ),
@@ -210,7 +210,7 @@ class _HomePageState extends State<HomePage> {
                 ),
                  ),
 
-                 Padding(padding: EdgeInsets.fromLTRB(6,11,32,15),
+                 Padding(padding: const EdgeInsets.fromLTRB(6,11,32,15),
                  child:
                   Column(
 
@@ -241,16 +241,16 @@ class _HomePageState extends State<HomePage> {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                      Image.asset('assets/images/sqt.jpg', height: 10, width: 9,),
-                     Text('2000sqft'),
+                     const Text('2000sqft'),
              
                      Image.asset('assets/images/bed.jpg', height: 12, width: 12,),
-                     Text('4'),
+                     const Text('4'),
 
                      Image.asset('assets/images/shower.jpg', height: 12, width: 12,),
-                     Text('3'),
+                     const Text('3'),
              
                      Image.asset('assets/images/restaurant.jpg', height: 12, width: 12,),
-                     Text('1'),
+                     const Text('1'),
                     ],
                   ),
                 

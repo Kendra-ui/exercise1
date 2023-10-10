@@ -47,7 +47,6 @@ class _homepageState extends State<homepage>{
     const Bookmark(),
     const Policy(),
     const Details(),
-    //Settings(),
   ];
 
   void onTappedBar(int index)

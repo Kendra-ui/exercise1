@@ -10,7 +10,7 @@ class Policy extends StatefulWidget {
 class _PolicyState extends State<Policy> {
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return  const Scaffold(
       backgroundColor: Colors.white,
 
       body: SafeArea(
@@ -18,7 +18,7 @@ class _PolicyState extends State<Policy> {
           
           child: Column(
             children: [
-            const Padding(padding: const EdgeInsets.all(18),
+            Padding(padding: EdgeInsets.all(18),
             child: 
                Row(
               mainAxisAlignment: MainAxisAlignment.start,
@@ -29,7 +29,7 @@ class _PolicyState extends State<Policy> {
             ],
                 ),
         ),
-         const Padding(padding: const EdgeInsets.all(30),
+         Padding(padding: EdgeInsets.all(30),
             child: 
                Row(
               mainAxisAlignment: MainAxisAlignment.start,
@@ -40,17 +40,13 @@ class _PolicyState extends State<Policy> {
                 ),
          ),
 
-         Padding(padding: const EdgeInsets.all(17),
+         Padding(padding: EdgeInsets.all(17),
             child: 
-               Container(
-            child: 
-              Text('One of the purposes of a terms of service policy is to explain the rules and guidelines your users must follow while accessing your services, which helps set their expectation By clearly communicating what is allowed and prohibited on your website or app and explaining to your users the consequences of breaking those rules, you make it easier for your business to prevent users from abusing your services or causing harm to others.'
-              ,textAlign: TextAlign.justify, style: TextStyle(fontSize: 12, fontWeight: FontWeight.w400),),
-            
-                ),
+               Text('One of the purposes of a terms of service policy is to explain the rules and guidelines your users must follow while accessing your services, which helps set their expectation By clearly communicating what is allowed and prohibited on your website or app and explaining to your users the consequences of breaking those rules, you make it easier for your business to prevent users from abusing your services or causing harm to others.'
+               ,textAlign: TextAlign.justify, style: TextStyle(fontSize: 12, fontWeight: FontWeight.w400),),
          ),
 
-         const Padding(padding: const EdgeInsets.all(30),
+         Padding(padding:  EdgeInsets.all(30),
             child: 
                Row(
               mainAxisAlignment: MainAxisAlignment.start,
@@ -61,17 +57,13 @@ class _PolicyState extends State<Policy> {
                 ),
          ),
 
-         Padding(padding: const EdgeInsets.all(17),
+         Padding(padding: EdgeInsets.all(17),
             child: 
-                Container(
-            child: 
-              Text('One of the purposes of a terms of service policy is to explain the rules and guidelines your users must follow while accessing your services, which helps set their expectation By clearly communicating what is allowed and prohibited on your website or app and explaining to your users the consequences of breaking those rules, you make it easier for your business to prevent users from abusing your services or causing harm to others.'
-              ,textAlign: TextAlign.justify, style: TextStyle(fontSize: 12, fontWeight: FontWeight.w400),),
-            
-                ),
+                Text('One of the purposes of a terms of service policy is to explain the rules and guidelines your users must follow while accessing your services, which helps set their expectation By clearly communicating what is allowed and prohibited on your website or app and explaining to your users the consequences of breaking those rules, you make it easier for your business to prevent users from abusing your services or causing harm to others.'
+                ,textAlign: TextAlign.justify, style: TextStyle(fontSize: 12, fontWeight: FontWeight.w400),),
          ),
 
-         const Padding(padding: const EdgeInsets.all(30),
+         Padding(padding: EdgeInsets.all(30),
             child: 
                Row(
               mainAxisAlignment: MainAxisAlignment.start,
@@ -82,14 +74,10 @@ class _PolicyState extends State<Policy> {
                 ),
          ),
 
-         Padding(padding: const EdgeInsets.all(17),
+         Padding(padding: EdgeInsets.all(17),
             child: 
-               Container(
-            child: 
-              Text('One of the purposes of a terms of service policy is to explain the rules and guidelines your users must follow while accessing your services, which helps set their expectation By clearly communicating what is allowed and prohibited on your website or app and explaining to your users the consequences of breaking those rules, you make it easier for your business to prevent users from abusing your services or causing harm to others.'
-              ,textAlign: TextAlign.justify, style: TextStyle(fontSize: 12, fontWeight: FontWeight.w400),),
-            
-                ),
+               Text('One of the purposes of a terms of service policy is to explain the rules and guidelines your users must follow while accessing your services, which helps set their expectation By clearly communicating what is allowed and prohibited on your website or app and explaining to your users the consequences of breaking those rules, you make it easier for your business to prevent users from abusing your services or causing harm to others.'
+               ,textAlign: TextAlign.justify, style: TextStyle(fontSize: 12, fontWeight: FontWeight.w400),),
          ),
           ],
 

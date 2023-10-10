@@ -12,7 +12,7 @@ class _BookmarkState extends State<Bookmark> {
   @override
   Widget build(BuildContext context) {
     return    Scaffold(
-      backgroundColor: Color.fromARGB(255, 245, 238, 247),
+      backgroundColor: const Color.fromARGB(255, 245, 238, 247),
       body: SafeArea(
       child: SingleChildScrollView(
           child: Column(
@@ -36,12 +36,12 @@ class _BookmarkState extends State<Bookmark> {
                 width: 36,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color:Color.fromARGB(255, 203, 225, 253),
+                  color:const Color.fromARGB(255, 203, 225, 253),
                   
                   
                 ),
                 child: 
-                Icon(Icons.bookmark, color: Color.fromARGB(255, 68, 55, 252),)
+                const Icon(Icons.bookmark, color: Color.fromARGB(255, 68, 55, 252),)
 
               )
 
@@ -51,7 +51,6 @@ class _BookmarkState extends State<Bookmark> {
             ),
             
         Padding( padding: const EdgeInsets.only(left:15),
-              child: Container(
               child: Column(children: [
             Row(
               mainAxisAlignment:MainAxisAlignment.start,
@@ -73,7 +72,6 @@ class _BookmarkState extends State<Bookmark> {
                     
                 ],
         )
-            )
       ),
 
       Padding(padding: const EdgeInsets.symmetric(vertical:10, horizontal: 30),
@@ -86,9 +84,9 @@ class _BookmarkState extends State<Bookmark> {
           width: 95,
           height: 95,
               decoration: BoxDecoration(
-              border: Border.all(color: Color.fromARGB(255, 165, 211, 248)),
-              borderRadius: BorderRadius.circular(15), color: Color.fromARGB(255, 165, 211, 248)),
-              child:Padding(padding: EdgeInsets.all(19),
+              border: Border.all(color: const Color.fromARGB(255, 165, 211, 248)),
+              borderRadius: BorderRadius.circular(15), color: const Color.fromARGB(255, 165, 211, 248)),
+              child:Padding(padding: const EdgeInsets.all(19),
               child:  Column(children: [
                   Image.asset('assets/images/message.jpg'),
                   const Padding(padding: EdgeInsets.only(top:9.69),
@@ -106,9 +104,9 @@ class _BookmarkState extends State<Bookmark> {
         width: 95,
         height: 95,
             decoration: BoxDecoration(
-            border: Border.all(color: Color.fromARGB(255, 248, 202, 165)),
-            borderRadius: BorderRadius.circular(15), color: Color.fromARGB(255, 248, 202, 165)),
-            child:Padding(padding: EdgeInsets.all(19),
+            border: Border.all(color: const Color.fromARGB(255, 248, 202, 165)),
+            borderRadius: BorderRadius.circular(15), color: const Color.fromARGB(255, 248, 202, 165)),
+            child:Padding(padding: const EdgeInsets.all(19),
             child:  Column(children: [
                 Image.asset('assets/images/Vector.jpg'),
                 const Padding(padding: EdgeInsets.only(top:9.69),
@@ -126,9 +124,9 @@ class _BookmarkState extends State<Bookmark> {
         width: 95,
         height: 95,
             decoration: BoxDecoration(
-            border: Border.all(color: Color.fromARGB(255, 175, 248, 165)),
-            borderRadius: BorderRadius.circular(15), color: Color.fromARGB(255, 175, 248, 165)),
-            child:Padding(padding: EdgeInsets.all(19),
+            border: Border.all(color: const Color.fromARGB(255, 175, 248, 165)),
+            borderRadius: BorderRadius.circular(15), color: const Color.fromARGB(255, 175, 248, 165)),
+            child:Padding(padding: const EdgeInsets.all(19),
             child:  Column(children: [
                 Image.asset('assets/images/Vector (1).jpg'),
                 const Padding(padding: EdgeInsets.only(top:9.69),
@@ -152,11 +150,11 @@ class _BookmarkState extends State<Bookmark> {
             Text('Property', textAlign: TextAlign.left, style: TextStyle(fontSize: 18,fontWeight: FontWeight.w700),),
             ),
           
-            Padding( padding:  EdgeInsets.all(10),
+            Padding( padding:  const EdgeInsets.all(10),
               child:Column(
                 children: [
                 
-                Padding(padding: EdgeInsets.all(10),
+                Padding(padding: const EdgeInsets.all(10),
                 child: 
                  Container(
               width: 400,
@@ -179,7 +177,7 @@ class _BookmarkState extends State<Bookmark> {
                 ),
                  ),
 
-                 Padding(padding: EdgeInsets.fromLTRB(6,11,32,15),
+                 Padding(padding: const EdgeInsets.fromLTRB(6,11,32,15),
                  child:
                   Column(
 
@@ -209,16 +207,16 @@ class _BookmarkState extends State<Bookmark> {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                      Image.asset('assets/images/sqt.jpg', height: 10, width: 9,),
-                     Text('2000sqft'),
+                     const Text('2000sqft'),
              
                      Image.asset('assets/images/bed.jpg', height: 12, width: 12,),
-                     Text('4'),
+                     const Text('4'),
 
                      Image.asset('assets/images/shower.jpg', height: 12, width: 12,),
-                     Text('3'),
+                     const Text('3'),
              
                      Image.asset('assets/images/restaurant.jpg', height: 12, width: 12,),
-                     Text('1'),
+                     const Text('1'),
                     ],
                   ),
                 
@@ -233,7 +231,7 @@ class _BookmarkState extends State<Bookmark> {
           ),
                  
 
-        Padding(padding: EdgeInsets.all(10),
+        Padding(padding: const EdgeInsets.all(10),
         child: 
         Container(
               width: 400,
@@ -255,7 +253,7 @@ class _BookmarkState extends State<Bookmark> {
                 ),
                  ),
 
-                 Padding(padding: EdgeInsets.fromLTRB(6,11,32,15),
+                 Padding(padding: const EdgeInsets.fromLTRB(6,11,32,15),
                  child:
                   Column(
 
@@ -286,16 +284,16 @@ class _BookmarkState extends State<Bookmark> {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                      Image.asset('assets/images/sqt.jpg', height: 10, width: 9,),
-                     Text('2000sqft'),
+                     const Text('2000sqft'),
              
                      Image.asset('assets/images/bed.jpg', height: 12, width: 12,),
-                     Text('4'),
+                     const Text('4'),
 
                      Image.asset('assets/images/shower.jpg', height: 12, width: 12,),
-                     Text('3'),
+                     const Text('3'),
              
                      Image.asset('assets/images/restaurant.jpg', height: 12, width: 12,),
-                     Text('1'),
+                     const Text('1'),
                     ],
                   ),
                 
@@ -309,7 +307,7 @@ class _BookmarkState extends State<Bookmark> {
           ),
         ),
           
-          Padding(padding: EdgeInsets.all(10),
+          Padding(padding: const EdgeInsets.all(10),
           child: 
           Container(
               width: 400,
@@ -331,7 +329,7 @@ class _BookmarkState extends State<Bookmark> {
                 ),
                  ),
 
-                 Padding(padding: EdgeInsets.fromLTRB(6,11,32,15),
+                 Padding(padding: const EdgeInsets.fromLTRB(6,11,32,15),
                  child:
                   Column(
 
@@ -362,16 +360,16 @@ class _BookmarkState extends State<Bookmark> {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                      Image.asset('assets/images/sqt.jpg', height: 10, width: 9,),
-                     Text('2000sqft'),
+                     const Text('2000sqft'),
              
                      Image.asset('assets/images/bed.jpg', height: 12, width: 12,),
-                     Text('4'),
+                     const Text('4'),
 
                      Image.asset('assets/images/shower.jpg', height: 12, width: 12,),
-                     Text('3'),
+                     const Text('3'),
              
                      Image.asset('assets/images/restaurant.jpg', height: 12, width: 12,),
-                     Text('1'),
+                     const Text('1'),
                     ],
                   ),
                 
@@ -385,7 +383,7 @@ class _BookmarkState extends State<Bookmark> {
           ),
               ),
 
-          Padding(padding: EdgeInsets.all(10),
+          Padding(padding: const EdgeInsets.all(10),
           child: 
           Container(
               width: 400,
@@ -407,7 +405,7 @@ class _BookmarkState extends State<Bookmark> {
                 ),
                  ),
 
-                 Padding(padding: EdgeInsets.fromLTRB(6,11,32,15),
+                 Padding(padding: const EdgeInsets.fromLTRB(6,11,32,15),
                  child:
                   Column(
 
@@ -438,16 +436,16 @@ class _BookmarkState extends State<Bookmark> {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                      Image.asset('assets/images/sqt.jpg', height: 10, width: 9,),
-                     Text('2000sqft'),
+                     const Text('2000sqft'),
              
                      Image.asset('assets/images/bed.jpg', height: 12, width: 12,),
-                     Text('4'),
+                     const Text('4'),
 
                      Image.asset('assets/images/shower.jpg', height: 12, width: 12,),
-                     Text('3'),
+                     const Text('3'),
              
                      Image.asset('assets/images/restaurant.jpg', height: 12, width: 12,),
-                     Text('1'),
+                     const Text('1'),
                     ],
                   ),
                 

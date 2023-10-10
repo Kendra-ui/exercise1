@@ -11,12 +11,12 @@ class _DetailsState extends State<Details> {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
-      backgroundColor: Color.fromARGB(255, 252, 243, 253),
+      backgroundColor: const Color.fromARGB(255, 252, 243, 253),
       body: SafeArea(
       child: SingleChildScrollView(
           child: Column(
             children: [
-             const Padding(padding: const EdgeInsets.all(18),
+             const Padding(padding:  EdgeInsets.all(18),
             child: 
                Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -39,7 +39,7 @@ class _DetailsState extends State<Details> {
               child:Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  Padding(padding: EdgeInsets.all(5),
+                  Padding(padding: const EdgeInsets.all(5),
                   child:
                   Container(
               width: 400,
@@ -102,7 +102,7 @@ class _DetailsState extends State<Details> {
           ),
           ),
                   
-          Padding(padding: EdgeInsets.all(5),
+          Padding(padding: const EdgeInsets.all(5),
           child: 
           Container(
               width: 400,
@@ -161,7 +161,7 @@ class _DetailsState extends State<Details> {
           ),
           ),
 
-          Padding(padding: EdgeInsets.all(5),
+          Padding(padding: const EdgeInsets.all(5),
           child: Container(
               width: 400,
               decoration: BoxDecoration(
@@ -224,7 +224,7 @@ class _DetailsState extends State<Details> {
 
           ),
 
-          Padding(padding: EdgeInsets.all(5),
+          Padding(padding: const EdgeInsets.all(5),
           child: Container(
               width: 400,
               decoration: BoxDecoration(
@@ -286,7 +286,7 @@ class _DetailsState extends State<Details> {
           ),
           
 
-          Padding(padding: EdgeInsets.all(5),
+          Padding(padding: const EdgeInsets.all(5),
           child:Container(
               width: 400,
               decoration: BoxDecoration(
@@ -344,7 +344,7 @@ class _DetailsState extends State<Details> {
           ),
            ),
            
-          Padding(padding: EdgeInsets.all(5),
+          Padding(padding: const EdgeInsets.all(5),
           child: Container(
               width: 400,
               decoration: BoxDecoration(
